@@ -1,0 +1,182 @@
+/*-----GENERAL STYLING-----*/ 
+body, html {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+}
+
+#content {
+	margin:0 auto;
+	color: white;
+	height: 100%;
+	min-width: 400px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*-----SIDEBAR STYLING-----*/
+#sideBar {
+	background-color: rgba(0,0,0,.5);
+	height: 100%;
+	padding:0px;
+	border-right: 5px solid black;
+}
+
+#timerContainer, #userContainer, #correctContainer, #wrongContainer {
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	height: 120px;
+}
+
+#timerContainer h2, #userContainer h2, #correctContainer h2, #wrongContainer h2{
+	font-size: 3em;
+	padding-top:15px;
+	margin-bottom: 5px;
+
+}
+
+#timerContainer h3, #userContainer h3, #correctContainer h3, #wrongContainer h3{
+	font-size: 2.3em;
+	margin-top:0px;
+
+}
+/*-----GAME START SCREEN STYLING-----*/
+#gameStart {
+	text-align: center;
+}
+
+#gameStart h1 {
+	background-color: rgba(0,0,0,.6);
+	font-size: 5em;
+	display: inline-block;
+	padding: 25px 100px;
+}
+
+#rules {
+	background-color: rgba(0,0,0,.6);
+	max-width: 800px;
+	margin: 0 auto;
+	padding:30px;
+}
+
+#gameStart h2 {
+	margin-top: 0px;
+}
+
+#gameStart p {
+	font-size: 1.5em;
+}
+
+.startGame {
+	color: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	font-size: 3em;
+	background-color: rgba(0,50,0,.6);
+	margin-top: 20px;
+	letter-spacing: 1px;
+	transition: transform 300s, letter-spacing 15s;
+}
+
+.startGame:hover {
+	background-color: rgba(0,100,0,.7);
+	transform: rotate(150000deg);
+	letter-spacing: 20px;
+}
+
+/*-----PREPARE SCREEN STYLING-----*/
+#prepareContainer {
+	text-align: center;
+}
+
+#prepareContainer h1 {
+	font-size: 7em;
+	margin-top: 260px
+}
+
+/*-----QUESTION SCREEN STYLING-----*/
+#questionContainer, #answerContainer, #factContainer {
+	text-align: center;
+	max-width: 800px;
+	padding:20px;
+	margin:10px auto;
+}
+
+#questionContainer, #factContainer {
+background-color: rgba(0,0,0,.6);
+}
+
+#hintsContainer {
+	width: 80%;
+	margin:0 auto;
+}
+
+.hint {
+	text-align: center;
+	font-size: 1.2em;	
+	width: 28%;
+	margin:0px 2%;
+	display: inline-block;
+	padding:15px 0px;
+}
+
+.positive {
+	background-color: rgba(0,75,0,.6);
+}
+
+.negative {
+	background-color: rgba(75,0,0,.6);
+}
+
+#choicesContainer {
+	position: absolute;
+	width: 100%;
+	top: 300px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#choiceList {
+
+}
+
+.choice h2 {
+	background-color: rgba(0,0,0,.4);
+	width: 600px;
+	padding:15px 0px;
+	margin:0px;
+	transition: background-color .2s, width .5s;
+}
+
+.choice:hover h2{
+	background-color: rgba(0,0,0,.65);
+	width: 700px
+}
+
+label > input {
+	display: none;
+}
+
+input[type="radio"]:checked + h2{
+	background-color: rgba(0,120,0,.7);
+}
+
+/*-----END PAGE STYLING-----*/
+#gameOver {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+
+
+
